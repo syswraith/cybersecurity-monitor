@@ -5,7 +5,7 @@ import traceback
 from platforms import PicoCTF, TryHackMe
 
 if __name__ == "__main__":
-    webhook_url = "enter webhook url here"
+    webhook_url = os.getenv("WEBHOOK_URL")
     
     # Use absolute path for profiles directory relative to this script
     script_dir = os.path.dirname(os.path.abspath(__file__))
